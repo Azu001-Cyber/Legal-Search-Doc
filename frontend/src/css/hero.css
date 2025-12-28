@@ -1,0 +1,94 @@
+/* Shared Variables */
+:root {
+    --bg-dark: #0f172a;
+    --text-main: #ffffff;
+    --text-muted: #94a3b8;
+    --card-bg: #1e293b;
+    --primary-hover: #4f46e5;
+}
+
+/* Hero Styles */
+.hero-section{
+    padding: 5rem 2rem;
+    background-color: var(--text-main);
+}
+
+.hero-card {
+    max-width: 800px;
+    /* max-width: 1100px; */
+    margin: 0 auto;
+    /* background: linear-gradient(145deg, #1e293b, #0f172a); */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero-text h1 {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    color: var(--bg-dark);
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+span{
+    color:  #5d88cc;
+}
+/*  */
+
+.hero p {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+}
+
+/* Button Styles */
+/* .lp-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 1rem, 2rem;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+} */
+
+.lp-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: white;
+    color: var(--bg-dark);
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+
+.lp-btn:hover {
+    background-color: #0f1a2d;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .hero-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+    .hero-text p {
+        margin: 0 auto 2rem;
+    }
+}

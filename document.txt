@@ -1,0 +1,11 @@
+A descriptive illustration for the project.
+# TITLE : Legal Document search portal
+
+## Description: A web interface for a legal assistant tool that helps
+                users search and summarize legal documents.
+                
+
+Frontend UI : A React interface with query input and response display.
+
+Backend API: A FastAPI endpoint returning mock responses using 3 hardcoded legal docs.
+

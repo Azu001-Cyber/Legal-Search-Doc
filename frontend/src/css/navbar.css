@@ -1,0 +1,39 @@
+:root{
+    --bg-dark: #0f172a;
+    --text-main: #ffffff;
+}
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    gap: 2.5em;
+}
+.nav-bar > li{
+    list-style: none;
+}
+.nav-bar > .search>a{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding:1rem 1em;
+    border-radius: 12px;
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+}
+
+.brandLogo img{
+    width: 2.5rem;
+}
+
+.nav-link-container,a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+    font-weight: 600;
+}

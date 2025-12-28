@@ -1,0 +1,71 @@
+
+:root {
+    --primary: #6366f1;
+    --primary-hover: #4f46e5;
+    --bg-dark: #0f172a;
+    --text-main: #ffffff;
+    --text-muted: #94a3b8;
+    --card-bg: #1e293b;
+}
+
+/* CTA Styles */
+.cta-section {
+    padding: 5rem 2rem;
+    background-color: var(--bg-dark);
+}
+
+.cta-card {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: linear-gradient(145deg, #1e293b, #0f172a);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cta-text h2 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.cta-text p {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    max-width: 500px;
+}
+
+.cta-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: white;
+    color: var(--bg-dark);
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #f1f5f9;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+    .cta-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+    }
+    .cta-text p {
+        margin: 0 auto 2rem;
+    }
+}
