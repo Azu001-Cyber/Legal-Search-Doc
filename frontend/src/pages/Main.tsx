@@ -1,4 +1,4 @@
-import React from "react";
+
 import LegalSearch from "../components/legalSearch";
 import NavBar from "../components/navbar";
 import Footer from "../components/Footer";

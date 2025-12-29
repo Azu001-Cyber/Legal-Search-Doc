@@ -1,4 +1,4 @@
-import React from "react";
+
 import { PiArrowRightLight } from "react-icons/pi";
 import { Link } from 'react-router-dom';
 import "../css/cta.css";
