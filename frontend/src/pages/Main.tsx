@@ -8,9 +8,11 @@ import Footer from "../components/Footer";
 export default function Main(){
     return (
         // Main app components
-        <div className="site-container">
+        <div className="">
             <NavBar/>
-            <LegalSearch/>
+            <main className="site-container">
+                <LegalSearch/>
+            </main>
             <Footer/>
         </div>
     )

@@ -23,7 +23,7 @@ const Hero = () => {
                     </p>
                 </div>
 
-                <Link to="/app" className="lp-btn">
+                <Link to="/app" className="hero-btn">
                     <CiSearch /> Start Searching
                 </Link>
             </div>

@@ -5,6 +5,7 @@ import '../css/legalsearch.css'
 
 const LegalSearch = () => {
     const [inputValue, setInputValue] = useState('');
+    
     const handleChange = (event) => {
         setInputValue(event.target.value);
     }
@@ -37,11 +38,15 @@ const LegalSearch = () => {
             </section>
 
             <section className="output-container">
+
                 <h3>Available Documents</h3>
-                <article>
-                    <img src="legal_logo.svg" alt="" className="output-logo" />
-                    <p>No Document available yet.</p>
-                </article>
+
+                <div>
+                    <article>
+                        <img src="legal_logo.svg" alt="" className="output-logo" />
+                        <p>No Document available yet.</p>
+                    </article>
+                </div>
 
             </section>
 
