@@ -2,9 +2,6 @@ import { useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import '../css/legalsearch.css'
 
-
-
-
 const LegalSearch = () => {
     
     const [query, setQuery] = useState("");
