@@ -12,7 +12,7 @@ app = FastAPI()
 
 # url that are allowed to make requests
 origins = [
-        "http://localhost:5173"
+        "http://localhost:5173",
         "https://legal-search-doc.vercel.app/"
 ]
 

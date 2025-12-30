@@ -8,7 +8,7 @@ import '../css/legalsearch.css'
 const LegalSearch = () => {
     
     const [query, setQuery] = useState("");
-    const [results, setResult] = useState<[]>([]);
+    const [results, setResult] = useState<any[]>([]);
 
     // const [inputValue, setInputValue] = useState('');
 
@@ -18,22 +18,24 @@ const LegalSearch = () => {
 
     const handleSubmit = async (event:React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-    }
 
-    try {
-        const response = await fetch("http://localhost:8000//document/search?q=${query}")
-        const data = await response.json();
-        setResult(data.matches || []);
-    } catch (error) {
-        console.error("Error fetching document:", error);
-        setResult([]);
-    }
+        try {
+            const response = await fetch(`http://localhost:8000//document/search?q=${query}`)
+            const data = await response.json();
+            setResult(data.matches || []);
+        } catch (error) {
+            console.error("Error fetching document:", error);
+            setResult([]);
+        }
+
+    };
+
+
 
     return (
         <div className="container">
             <section className="hero">
                 <img src="legal_logo.svg" alt="Brand Logo" className="main-page-logo" />
-
                 <h1>Legal Document Search</h1>
                 <p>AI-Powered legal research assistant for intelligent document search and analysis</p>
             </section>
@@ -43,15 +45,19 @@ const LegalSearch = () => {
 
                 <form action="" method="get" onSubmit={handleSubmit}>
 
-                    <input type="text" value={query} onChange={handleChange} placeholder="Enter your legal query..."/>
+                    <input 
+                    type="text" 
+                    value={query} 
+                    onChange={handleChange} 
+                    placeholder="Enter your legal query..."/>
 
                     <button type="submit" className="lp-btn">
                         <CiSearch />
                         Search
                     </button>
                 </form>
-
             </section>
+
             {/* Output Section */}
             <section className="output-container">
 
