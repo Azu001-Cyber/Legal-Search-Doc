@@ -1,6 +1,12 @@
 :root{
     --accent-color: #5d88cc;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .main-page-logo{
     width: 10em;
 }
@@ -18,16 +24,41 @@
     align-items: center;
 }
 
-.input-container{
-    margin-top: 1.2rem;
-    /* align-items: center; */
-    box-shadow: 5px, 5px, 5px, rgba(0, 0, 0, 2.5);
-    /* display: flex; */
-    /* flex-direction: column; */
-    justify-content: center;
-    align-items: center;
+.hero h1{
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    color: var(--bg-dark);
+    line-height: 1.1;
 }
 
+.input-container{
+    width: 100%;
+    margin-top: 1.2rem;
+    box-shadow: 5px, 5px, 5px, rgba(0, 0, 0, 2.5);
+    display: flex;
+    justify-content: center; 
+    /* align-items: center;  */
+    
+}
+
+.input-container form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+
+/* Make input take the remaining space */
+.input-container input {
+    flex: 1;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%; /* Important for mobile */
+    box-sizing: border-box;
+}
 
 .output-container{
     display: flex;
@@ -61,4 +92,18 @@
 
 .lp-btn:hover {
     background-color: var(--accent-color);
+}
+
+@media (max-width: 600px) {
+    .input-container form{
+        flex-direction: column;
+        width: 100%;
+        padding: 1rem;
+    }
+    .input-container .lp-btn{
+        padding: 1rem 2rem;
+        margin: 1.5em;
+        align-items: center;
+        justify-content: center;
+    }
 }
