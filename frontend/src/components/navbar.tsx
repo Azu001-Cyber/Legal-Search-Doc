@@ -1,6 +1,7 @@
 
 import '../css/navbar.css';
 import { CiSearch } from "react-icons/ci";
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     return (
@@ -14,8 +15,8 @@ const NavBar = () => {
             </div>
 
             <ul className="nav-bar">
-                <li><a href="/">Home</a></li>
-                <li className="search"><a href="/app">< CiSearch/>Search</a></li>
+                <li><Link to={"/"}>Home</Link></li>
+                <li className="search"><Link to={"/app"}><CiSearch/>Search</Link></li>
             </ul>
         </nav>
     );
