@@ -5,6 +5,12 @@
     width: 10em;
 }
 
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
 .hero{
     display: flex;
     flex-direction: column;

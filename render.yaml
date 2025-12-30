@@ -1,8 +1,8 @@
 services:
   - type: web
-    name: fastapi-backend
+    name: legalsearch-backend
     env: python
     plan: free
     buildCommand: "pip install -r requirements.txt"
-    startCommand: "uvicorn main:app --host 0.0.0.0 --port $PORT"
+    startCommand: " python -m uvicorn main:app --host 0.0.0.0 --port $PORT"
     autoDeploy: true
