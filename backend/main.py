@@ -22,9 +22,10 @@ app = FastAPI()
 
 # url that are allowed to make requests
 origins = [
+        "https://legal-search-doc.vercel.app",
         "http://localhost:5173",
         "http://localhost:5175", 
-        "https://legal-search-doc.vercel.app",
+        
 ]
 
 app.add_middleware(
