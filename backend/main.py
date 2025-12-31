@@ -25,6 +25,7 @@ origins = [
         "http://localhost:5173",
         "http://localhost:5175", 
         "https://legal-search-doc.vercel.app",
+        "https://legal-search-doc.onrender.com/document/search"
 ]
 
 app.add_middleware(
