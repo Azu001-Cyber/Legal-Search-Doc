@@ -3,9 +3,9 @@ import { CiSearch } from "react-icons/ci";
 import '../css/legalsearch.css'
 // import axios from "axios";
 
-// const API_URL = "https://legal-search-doc.onrender.com/document/search"
+const API_URL = "https://legal-search-doc.onrender.com/document/search"
 
-const API_URL = "http://localhost:8000";
+// const API_URL = "http://localhost:8000";
 
 const LegalSearch = () => {
     

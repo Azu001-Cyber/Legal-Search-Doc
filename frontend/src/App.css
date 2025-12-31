@@ -144,6 +144,6 @@ hr{
 }
 
 .output-container article p {
-  color: var(--text-muted);
+  color: black;
   font-style: italic;
 }
