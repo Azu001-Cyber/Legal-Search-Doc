@@ -14,7 +14,7 @@ import httpx
 
 
 
-load_dotenv()
+# load_dotenv()
 AI_API_KEY = os.getenv("GOOGLE_GEMINI_API_KEY")
 
 
@@ -43,23 +43,34 @@ documents = {
         "doc1": {
                 "title": "Non-Disclosure Agreement (NDA)",
                 "content": """
-                THIS NON-DISCLOSURE AGREEMENT is made on 03/02/2026 between:
+                NON-DISCLOSURE AGREEMENT
+                Effective Date: 03/02/2026
 
-                1. PartyA_Name, located at PartyA_Address
-                AND
-                2. PartyB_Name, located at PartyB_Address
+                This Agreement is entered into between:
 
-                Both parties agree to keep confidential all shared information including but not limited to
-                trade secrets, intellectual property, strategies, and any sensitive data.
+                - **PartyA_Name**, of PartyA_Address
+                - **PartyB_Name**, of PartyB_Address
 
-                Obligations:
-                - Confidential information shall not be shared with third parties.
-                - Information must not be used outside the permitted purpose.
-                - This agreement remains in force for 3 years.
+                (Collectively referred to as "the Parties".)
+
+                Purpose:
+                The Parties acknowledge that, throughout the course of their interaction, certain private, confidential,
+                or proprietary information may be exchanged. This agreement exists to ensure such information remains
+                protected.
+
+                Confidentiality Obligations:
+                1. Any confidential material shared between the Parties shall not be disclosed, copied, or transferred
+                to any third party without prior written approval.
+                2. Information obtained under this Agreement shall only be used for the intended business purpose.
+                3. Both Parties must take reasonable steps to prevent unauthorized access or disclosure.
+
+                Term & Duration:
+                This Agreement shall remain valid and enforceable for **three (3) years** from the effective date,
+                unless terminated earlier by mutual written consent.
 
                 Signatures:
-                ______________________  ______________________
-                PartyA_Name           PartyB_Name
+                ____________________________        ____________________________
+                PartyA_Name                         PartyB_Name
                 """,
                 "date": "03/02/2026"
         },
@@ -67,23 +78,29 @@ documents = {
         "doc2": {
                 "title": "Service Agreement",
                 "content": """
-                SERVICE AGREEMENT made on 8/04/2025.
+                SERVICE AGREEMENT
+                Date: 8/04/2025
 
-                This agreement is between:
-                Service Provider: John Doe
-                Client: Jake Amon
+                This Agreement is established between the following parties:
 
-                Scope of Service:
-                - 6 months
+                - **Service Provider:** John Doe  
+                - **Client:** Jake Amon  
 
-                Terms:
-                - Payment: $50,000 due upon completion/delivery.
-                - Duration: 3 months
-                - Termination: Either party may terminate with written notice.
+                Purpose of Agreement:
+                The Client is engaging the Service Provider to perform professional services as discussed and agreed
+                upon by both parties. The services will be carried out over a working period of **six (6) months**.
 
-                Signatures:
-                ______________________  ______________________
-                John Doe        Jake Amon
+                Terms & Conditions:
+                1. **Compensation:** The total fee for the services rendered shall be **$50,000**, to be paid upon final
+                delivery and acceptance of the completed work.
+                2. **Project Duration:** Services are expected to be completed within a period of **three (3) months**
+                from the start date, unless otherwise extended by mutual consent.
+                3. **Termination Clause:** Either party retains the right to end this Agreement by issuing a formal
+                written notice prior to termination.
+
+                Signatures of Agreement:
+                _________________________________        _________________________________
+                John Doe, Service Provider              Jake Amon, Client
                 """,
                 "date": "8/04/2025"
         },
@@ -96,20 +113,23 @@ documents = {
 
                 Dear Josh Athans,
 
-                We are pleased to offer you the position of Web developer at Linax. 
+                We are pleased to extend an official offer for the role of **Web Developer** at **Linax**. Your skills
+                and experience align with our goals, and we look forward to having you contribute to our team.
 
-                Details:
-                - Start Date: 20/07/2025
-                - Salary: $2,000
-                - Work Location: California
-                - Benefits: PTO, 401k 
+                Position & Compensation Details:
+                - **Commencement Date:** 20/07/2025
+                - **Monthly Salary:** $2,000
+                - **Primary Work Location:** California
+                - **Employee Benefits:** Paid Time Off (PTO), 401k plan, and other standard company benefits
 
-                Please sign below to confirm acceptance of this offer.
+                Next Steps:
+                Kindly review the above details. To indicate your acceptance of this employment offer, please sign
+                and date the acknowledgment below.
 
-                Accepted By:
-                ______________________
-                Ada matthew
-                Date: ________________
+                Confirmation of Acceptance:
+                ___________________________________
+                Ada Matthew
+                Date: _____________________________
                 """,
                 "date": "12/07/2025"
         }

@@ -12,12 +12,19 @@ const LegalSearch = () => {
     const [query, setQuery] = useState("");
     const [results, setResult] = useState<any[]>([]);
 
-    // const [inputValue, setInputValue] = useState('');
+    const suggestions = ["Employment Offer Letter", "Service Agreement","Non-Disclosure Agreement (NDA)"]
 
+    // populate the input with clicked term
+    const handleClick = (term:string) => {
+        setQuery(term);
+    }
+
+    // 
     const handleChange = (event:React.ChangeEvent<HTMLInputElement>) => {
         setQuery(event.target.value);
     }
 
+    // 
     const handleSubmit = async (event:React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
 
@@ -36,7 +43,6 @@ const LegalSearch = () => {
         }
 
     };
-
 
 
     return (
@@ -63,6 +69,18 @@ const LegalSearch = () => {
                         Search
                     </button>
                 </form>
+
+                <div className="suggestions">
+                    <h3>Suggestions</h3>
+                    {suggestions.map((term) =>(
+                        <span key={term} onClick={()=> handleClick(term)}>
+
+                            <ul>
+                                <li>{term}</li>
+                            </ul>
+                        </span>
+                    ))}
+                </div>
             </section>
 
             {/* Output Section */}

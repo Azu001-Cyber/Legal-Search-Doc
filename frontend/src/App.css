@@ -97,6 +97,9 @@ hr{
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   border: 1px solid var(--border-color);
   margin-bottom: 60px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .input-container form {

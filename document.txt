@@ -11,7 +11,7 @@ Backend API: A FastAPI endpoint returning mock responses using 3 hardcoded legal
 
 #Todo:
 Frontend: 
-1. Add direct select for documents
+1. Add click to search for documents
 2. Style the display section for returned documents
 
 Backend:
