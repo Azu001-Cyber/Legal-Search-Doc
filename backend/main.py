@@ -13,7 +13,8 @@ app = FastAPI()
 # url that are allowed to make requests
 origins = [
         "http://localhost:5173",
-        "https://legal-search-doc.vercel.app/"
+        "http://localhost:5175", 
+        "https://legal-search-doc.vercel.app",
 ]
 
 app.add_middleware(
@@ -84,13 +85,13 @@ documents = {
 
                 Dear {Employee_Name},
 
-                We are pleased to offer you the position of {Job_Title} at {Company_Name}.
+                We are pleased to offer you the position of {Job_Title} at {Company_Name}. 
 
                 Details:
                 - Start Date: {Start_Date}
                 - Salary: {Salary}
                 - Work Location: {Location}
-                - Benefits: {Benefits}
+                - Benefits: {Benefits} 
 
                 Please sign below to confirm acceptance of this offer.
 
@@ -108,7 +109,7 @@ documents = {
 async def get_document(q:str=Query(..., description="Search text")):
         results = []
         for doc_id, doc in documents.items():
-                if q.lower() in doc["content"].lower():
+                if q.lower() in doc["title"].lower():
                     results.append({"id":doc_id, **doc})
         if results:
                 return JSONResponse(content={"matches":results})

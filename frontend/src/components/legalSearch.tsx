@@ -1,6 +1,11 @@
 import { useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import '../css/legalsearch.css'
+// import axios from "axios";
+
+// const API_URL = "https://legal-search-doc.onrender.com/document/search"
+
+const API_URL = "http://localhost:8000";
 
 const LegalSearch = () => {
     
@@ -17,9 +22,14 @@ const LegalSearch = () => {
         event.preventDefault();
 
         try {
-            const response = await fetch(`http://localhost:8000//document/search?q=${query}`)
+            const response = await fetch(`${API_URL}/document/search?q=${encodeURIComponent(query)}`)
+
+            if (!response.ok){
+                throw new Error(`Request failed with status ${response.status}`)
+            }
             const data = await response.json();
             setResult(data.matches || []);
+
         } catch (error) {
             console.error("Error fetching document:", error);
             setResult([]);
@@ -72,13 +82,12 @@ const LegalSearch = () => {
                                 <img src="legal_logo.svg" alt="" className="output-logo"/>
                                 { <h4>{doc.title}</h4> }
                                 { <p>{doc.content}</p> }
+                                {<p>{doc.date}</p>}
                             </article>
                         ))
                     )}
                 </div>
-
             </section>
-
         </div>
     )
 };
