@@ -34,12 +34,10 @@ Legal-Search-Doc/ <br>
 
 This project includes:
 
-- Backend: [Python/Node/your tech here — update accordingly]
-- Frontend: [React/Vue/Svelte — update accordingly]
-- Search: Text search engine or NLP integration
+- Backend: Python(FastAPI)
+- Frontend: React
+- Search: Text search engine 
 - Deployment config: `render.yaml` for hosted deployments
-
-*(Update the above stack to reflect actual frameworks used.)*
 
 ---
 
@@ -63,11 +61,12 @@ fastapi dev main.py
 ```
 
 
-
-
 cd frontend
+```bash
 npm install
 npm start
+```
+
 
 Created and maintained by Azu001-Cyber.
 Powered by modern web technologies to make legal research easy and efficient.
