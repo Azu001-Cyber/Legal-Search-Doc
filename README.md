@@ -20,11 +20,11 @@ It provides a user-friendly frontend interface and a powerful backend search eng
 
 ## 🗂️ Project Structure
 
-Legal-Search-Doc/
-├── backend/ # API server and logic
-├── frontend/ # UI client application
-├── document.txt # Project documentation
-├── render.yaml # Deployment configuration
+Legal-Search-Doc/ <br>
+├── backend/ # API server and logic <br>
+├── frontend/ # UI client application <br>
+├── document.txt # Project documentation  <br>
+├── render.yaml # Deployment configuration  <br>
 ├── README.md # Project overview (this file)
 
 
