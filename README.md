@@ -4,7 +4,7 @@
 is an open-source full-stack application designed to make searching legal documents smarter and easier. 
 It provides a user-friendly frontend interface and a powerful backend search engine to find, filter, and explore legal text quickly.
 
-🔗 Live demo: https://legal-search-doc.vercel.app/ :contentReference[oaicite:2]{index=2}
+🔗 Live demo: https://legal-search-doc.vercel.app/ 
 
 ---
 
