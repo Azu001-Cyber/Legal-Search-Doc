@@ -46,7 +46,7 @@ span{
 }
 /*  */
 
-.hero p {
+.hero-text p {
     font-size: 1.2rem;
     color: var(--text-muted);
     line-height: 1.6;

@@ -18,7 +18,7 @@ const Hero = () => {
                     <p>
                         Search through millions of legal
                         documents, case law, and statues
-                        with our intelligent search engine.Built for legal professional who value
+                        with our intelligent search engine. <br />Built for legal professional who value
                         precision and speed.
                     </p>
                 </div>
