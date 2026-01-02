@@ -62,8 +62,10 @@ pip install -r requirements.txt
 fastapi dev main.py
 ```
 
-
+```bash
 cd frontend
+```
+
 ```bash
 npm install
 npm start
