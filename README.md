@@ -48,12 +48,14 @@ This project includes:
 ```bash
 git clone https://github.com/Azu001-Cyber/Legal-Search-Doc.git
 cd Legal-Search-Doc
-
-```
 cd backend
+```
+
 # Install dependencies
 # For Python
+```bash
 pip install -r requirements.txt
+```
 
 # Run the Server
 ```bash
